@@ -140,3 +140,29 @@ to prevent a total crash i would use try and except blocks
 - Reflection halfway through Achievement 1:
 
 im used to JavaScript and everything from the main part of the program so this is all new but the logic behind it all makes solid sense. Proud of all of the progress that i have made in total, and proud of how much work i have been able to do in the few days before this program is shut down.
+
+Exercise 1.5: Object-Oriented Programming in Python
+Learning Goals
+
+- Apply object-oriented programming concepts to your Recipe app
+
+Reflection Questions
+
+- In your own words, what is object-oriented programming? What are the benefits of OOP?
+
+Object-oriented programming (OOP) is a way of structuring code around “objects” that contain both data (attributes) and behavior (methods). Instead of writing a bunch of separate functions that pass data around, OOP groups related functionality together inside a class. The benefits are that code becomes easier to organize, reuse, and scale. OOP also helps keep programs cleaner by making it easier to manage complexity, avoid repetition, and model real-world things in code.
+
+- What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+
+A class is like a blueprint that defines what an object should look like and what it can do. An object is a specific instance created from that class. For example, a “Car” class might define attributes like color, make, and mileage, and methods like start(), stop(), and drive(). A specific object could be “my_blue_honda”, which has its own color, mileage, and can perform those methods. In the Recipe app, the Recipe class is the blueprint, and each recipe (Tea, Coffee, etc.) is an object.
+
+- In your own words, write brief explanations of the following OOP concepts; 100 to 200 words per method is fine.
+
+Method: Inheritance
+Inheritance is when one class (the child/subclass) is built from another class (the parent/superclass). The child class automatically gets the parent class’s attributes and methods, and can also add new ones or override existing ones. This helps reduce duplicated code because you don’t have to rewrite shared behavior across similar classes. For example, you might have a base class “Recipe” and then create a subclass “BakedRecipe” that inherits everything from Recipe but adds baking-specific details like oven_temperature. Inheritance is useful when you have a clear “is-a” relationship between objects and want to build a hierarchy.
+
+Method: Polymorphism
+Polymorphism means “many forms,” and in programming it means different classes can share the same method name but behave differently. For example, multiple classes might have a method called display(), but each class implements it in a way that makes sense for its own data. This is powerful because it lets you write code that works with many different object types in a consistent way. In Python, polymorphism is common because Python focuses on behavior rather than strict type matching (“duck typing”). If an object supports the required method, the code can call it regardless of the object’s class.
+
+Method: Operator Overloading
+Operator overloading is when you define or customize how operators like +, -, ==, or < work for your own objects. In Python, this is done using special “dunder” methods like __add__ (for +) or __eq__ (for ==). It allows objects to behave more naturally when used with operators. For example, you could overload + for Recipe objects so that combining two recipes merges their ingredient lists (not something you’d always do, but it shows the idea). Operator overloading can make code cleaner and easier to read when used appropriately, because it lets operations feel intuitive for custom classes.
