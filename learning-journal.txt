@@ -226,3 +226,65 @@ Python can be slower than compiled languages (like C/C++/Java) for CPU-heavy wor
 
 
 
+Exercise 1.7: Finalizing Your Python Program
+Learning Goals
+
+⦁    Interact with a database using an object-relational mapper
+⦁    Build your final command-line Recipe application
+
+
+Reflection Questions
+
+⦁    What is an Object Relational Mapper and what are the advantages of using one?
+
+An Object Relational Mapper (ORM) is a tool that lets you interact with a database using Python objects and methods instead of writing raw SQL for everything. You define “models” (classes) that map to tables, and then you can create, read, update, and delete rows by working with those objects. The advantages are: cleaner and more readable code, less repeated SQL, safer queries (less risk of SQL injection when done correctly), and easier maintenance as your app grows. It also makes it simpler to switch or adapt database logic because your code is built around Python objects rather than database-specific SQL patterns.
+
+⦁    By this point, you’ve finished creating your Recipe app. How did it go? What’s something in the app that you did well with? If you were to start over, what’s something about your app that you would change or improve?
+
+Overall it went well, especially once the database connection and the ORM setup were working consistently. The part I did well was building a menu-driven program that actually supports the full CRUD workflow (create, view, search, edit, delete) and doesn’t immediately crash when a user types something unexpected. If I started over, I’d improve the UX and structure: I’d add clearer prompts and validation messages, add a “confirm” step before committing edits, and I’d refactor the code into smaller helper functions (and possibly separate files) to make it easier to maintain long-term. I’d also add automated tests and more consistent formatting for output.
+
+⦁    Imagine you’re at a job interview. You’re asked what experience you have creating an app using Python. Taking your work for this Achievement as an example, draft how you would respond to this question.
+
+I built a complete command-line Recipe application in Python from scratch. I started by working with core Python data structures and functions, then moved into file handling and persistence, and finally connected the app to a MySQL database. For the final version, I used SQLAlchemy as an ORM to map Python classes to database tables and perform CRUD operations in an object-oriented way. The app includes input validation, a menu-based user flow, ingredient-based searching, editing and deleting records, and proper session/connection handling. This project gave me hands-on experience building a practical Python application with persistent storage and a structured codebase.
+
+⦁    You’ve finished Achievement 1! Before moving on to Achievement 2, take a moment to reflect on your learning in the course so far:
+⦁    What went well during this Achievement?
+⦁    What’s something you’re proud of?
+⦁    What was the most challenging aspect of this Achievement?
+⦁    Did this Achievement meet your expectations? Did it give you the confidence to start working with your new Python skills?
+⦁    What’s something you want to keep in mind to help you do your best in Achievement 2?
+
+What went well: I stayed consistent and got through every section even when the setup and tooling felt confusing at first. I also learned how to connect the “why” behind Python concepts to real features in an app.
+What I’m proud of: I built a real working program that persists data, supports searching/editing/deleting, and uses a real database with an ORM. That feels like something I can actually show and talk about.
+Most challenging: Environment setup and keeping everything organized (venvs, paths, MySQL tools, and making sure I was in the right folder/using the right interpreter). Debugging connection and dependency issues took the most time.
+Did it meet expectations/confidence: Yes. I feel way more comfortable reading and writing Python now, and I understand how Python connects to databases and how ORMs fit into real development.
+Keep in mind for Achievement 2: Keep things organized early (folders, venv, requirements), test small pieces frequently, and don’t wait until the end to catch bugs. Also, write down setup steps as I go so I don’t lose time re-learning what I did last time.
+
+
+Well done—you’ve now completed the Learning Journal for Achievement 1. As you’ll have seen, a little metacognition can go a long way!
+
+
+Pre-Work: Before You Start Achievement 2
+
+In the final part of the learning journal for Achievement 1, you were asked if there’s anything—on reflection—that you’d keep in mind and do similarly or differently during Achievement 2. Think about these questions again:
+
+⦁    Was your study routine effective during Achievement 1? If not, what will you do differently during Achievement 2?
+
+It was effective in the sense that I stayed productive and finished the work, but it could be more structured. In Achievement 2, I want to timebox sessions (example: 60–90 minutes), take short notes while I work, and end each session by writing the next 3 concrete steps so I can start faster the next day. I also want to do more “mini reviews” where I summarize what I learned after each section.
+
+⦁    Reflect on your learning and project work for Achievement 1. What were you most proud of? How will you repeat or build on this in Achievement 2?
+
+I’m most proud of finishing a full CRUD application and connecting it to MySQL using SQLAlchemy. To build on that in Achievement 2, I want to focus on building projects that look more like real production apps: better structure, cleaner separation of concerns, and more testing. I also want to keep pushing toward portfolio-ready work and making sure each project is documented clearly.
+
+⦁    What difficulties did you encounter in the last Achievement? How did you deal with them? How could this experience prepare you for difficulties in Achievement 2?
+
+The main difficulties were environment/tooling issues and getting stuck on small errors that came from being in the wrong folder, missing a dependency, or using the wrong shell/tool mode. I dealt with it by slowing down, checking paths carefully, using error messages as clues, and testing step-by-step instead of changing five things at once. This prepares me for Achievement 2 because I’m more patient with setup, I know to verify small assumptions early (versions, venv, correct interpreter), and I’m more confident troubleshooting errors without panicking.
+
+
+
+
+
+
+
+
+
