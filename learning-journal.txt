@@ -1,0 +1,142 @@
+Exercise 1.1: Getting Started with Python
+Learning Goals
+
+- Summarize the uses and benefits of Python for web development
+- Prepare your developer environment for programming with Python
+
+Reflection Questions
+
+- In your own words, what is the difference between frontend and backend web development? If you were hired to work on backend programming for a web application, what kinds of operations would you be working on?
+
+If I were hired to do backend programming for a web application, I’d be working on operations like:
+
+1. Building and maintaining APIs (endpoints the frontend calls)
+2. Reading/writing data to databases (CRUD operations)
+3. Authentication and authorization (login, sessions/tokens, access control)
+4. Validating and sanitizing incoming data
+5. Handling errors and logging
+6. Integrating third-party services (payments, email, file storage, external APIs)
+7. Improving performance and security (rate limiting, caching, secure password storage, etc.)
+
+- Imagine you’re working as a full-stack developer in the near future. Your team is asking for your advice on whether to use JavaScript or Python for a project, and you think Python would be the better choice. How would you explain the similarities and differences between the two languages to your team? Drawing from what you learned in this Exercise, what reasons would you give to convince your team that Python is the better option?
+
+The main differences:
+
+1. Where they’re most commonly used: JavaScript is the default language of the browser, so it dominates frontend development. Python is extremely common on the backend and in fields like automation, data analysis, scripting, and AI/ML.
+2. Syntax and readability: Python is designed to be readable and concise, which makes it easier to maintain and understand—especially when working in teams.
+3. Ecosystem strengths: JavaScript has a massive web ecosystem (especially for frontend and full-stack with Node.js). Python has a huge ecosystem for backend development, scripting, automation, and data work.
+
+Why I’d recommend Python for a project:
+1. Speed of development: Python’s clean syntax helps teams build features faster and reduces boilerplate.
+2. Maintainability: Python code is typically easier to read and reason about, which helps long-term maintenance and onboarding.
+3. Versatility: Python can handle web backend work and also support automation, scripting, and data-heavy features without switching languages.
+4. Strong library support: Python has excellent libraries/frameworks for backend development and for security-related features (like password hashing) and general tooling.
+5. Great for scaling skills: Even if the project starts small, Python keeps the door open for adding analytics, automation, or other data-focused features later.
+
+- Now that you’ve had an introduction to Python, write down 3 goals you have for yourself and your learning during this Achievement.
+
+Build strong fundamentals in Python for backend work  
+I want to get comfortable with Python syntax, functions, modules, and writing clean code so I can confidently build backend logic without relying on copy/paste.
+
+Learn backend patterns that translate to real-world jobs  
+I want to understand how Python is used in realistic backend workflows—working with APIs, handling requests/responses, validating input, error handling, authentication, and working with databases.
+
+Create portfolio-ready Python projects and a repeatable workflow  
+By the end of this Achievement, I want to have at least one project that shows real backend skills and a professional workflow (virtual environments, requirements.txt, organized repo structure, and clear documentation). After this Achievement, I see myself working on full-stack projects where Python powers the backend and I can deploy and maintain it like a real product.
+
+
+
+Exercise 1.2: Data Types in Python
+Learning Goals
+
+- Explain variables and data types in Python
+- Summarize the use of objects in Python
+- Create a data structure for your Recipe app
+
+Reflection Questions
+
+- Imagine you’re having a conversation with a future colleague about whether to use the iPython Shell instead of Python’s default shell. What reasons would you give to explain the benefits of using the iPython Shell over the default one?
+
+It gives you better features that are easier to use in comparison to the default REPL. It has things like auto-tab complete, multi line editing and syntax highlighting. It just speeds up the experimentation process
+
+- Python has a host of different data types that allow you to store and organize information. List 4 examples of data types that Python recognizes, briefly define them, and indicate whether they are scalar or non-scalar.
+
+Data type      Definition                     Scalar or Non-Scalar?
+int            whole numbers                  scalar
+float          deciman numbers                scalar
+str            text data like "hello"         non
+list           ordered, a collection of items non
+
+- A frequent question at job interviews for Python developers is: what is the difference between lists and tuples in Python?
+
+Lists and tuples are both ordered collections, but the key difference is mutability. A list is mutable, meaning you can add, remove, or change elements after creation. A tuple is immutable, meaning once it’s created, you can’t change its contents. Because tuples don’t change, they’re often used for fixed data (like coordinates) and can be used as dictionary keys (if they contain only hashable items), while lists cannot. Lists are more flexible for data that you expect to update frequently.
+
+- For a language-learning flashcard app, which structure would you choose?
+
+For a language-learning flashcard app, I’d use a dictionary for each flashcard because each card has named attributes like word, definition, and category. Dictionaries make the data easy to read and access by key (e.g., card["definition"]) and are flexible if I later add fields like example_sentence, difficulty, or times_reviewed. Then I’d store multiple flashcards in a list (e.g., all_cards = [card1, card2, ...]) because the app needs an ordered, sequential set of cards that users can shuffle, loop through, add to, or remove from over time.
+
+
+
+Exercise 1.3: Functions and Other Operations in Python
+Learning Goals
+
+- Implement conditional statements in Python to determine program flow
+- Use loops to reduce time and effort in Python programming
+- Write functions to organize Python code
+
+Reflection Questions
+
+Travel App Script:
+
+destination = input("Where would you like to travel? ").strip().lower()
+
+if destination == "paris":
+    print("Enjoy your stay in Paris!")
+elif destination == "tokyo":
+    print("Enjoy your stay in Tokyo!")
+elif destination == "new york":
+    print("Enjoy your stay in New York!")
+else:
+    print("Oops, that destination is not currently available.")
+
+- Explain logical operators in Python.
+
+They're used to combine conditional statements - and, or, and not. Theyre useful for when you need more complex decision making like if you needed to check to see if the cooking time is blow low and easy, and there are only a few ingredients that are needed.
+
+- What are functions in Python?
+
+They are blocks of code that do a specific task- they are usable anywhere in the code and can be called upon as many times as necessary  
+They're useful because you dont need to repeat code throughout the project, leading to it looking/being more professional and organized adn they break the larger part of projects up into smaller more manageable tasks
+
+- Progress toward goals so far:
+
+The situation at hand so far is incredibly unique and i am making steady progress forward into completing this program before it shuts down indefinitely and terminates all contracts.
+
+
+
+Exercise 1.4: File Handling in Python
+Learning Goals
+
+- Use files to store and retrieve data in Python
+
+Reflection Questions
+
+- Why is file storage important?
+
+Its important becasuse it allows the program to save data perminanently instead of losing it every time you run something. Without that, the data would only be there while the program is running then be deleted afterwards which is obviously a problem
+
+- What are pickles?
+
+Pickels are python objects that are made into bytes so they can be saved, stored, and restored as they were initially. I would use it when i want to quickly save objects and reload them later somewhere else in the same project
+
+- How do you find your current directory?
+
+you would import os then use os.getcwd()
+
+- How do you prevent a crash from an error?
+
+to prevent a total crash i would use try and except blocks
+
+- Reflection halfway through Achievement 1:
+
+im used to JavaScript and everything from the main part of the program so this is all new but the logic behind it all makes solid sense. Proud of all of the progress that i have made in total, and proud of how much work i have been able to do in the few days before this program is shut down.
