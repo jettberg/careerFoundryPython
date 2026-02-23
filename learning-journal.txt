@@ -46,6 +46,10 @@ By the end of this Achievement, I want to have at least one project that shows r
 
 
 
+
+
+
+
 Exercise 1.2: Data Types in Python
 Learning Goals
 
@@ -74,6 +78,10 @@ Lists and tuples are both ordered collections, but the key difference is mutabil
 - For a language-learning flashcard app, which structure would you choose?
 
 For a language-learning flashcard app, I’d use a dictionary for each flashcard because each card has named attributes like word, definition, and category. Dictionaries make the data easy to read and access by key (e.g., card["definition"]) and are flexible if I later add fields like example_sentence, difficulty, or times_reviewed. Then I’d store multiple flashcards in a list (e.g., all_cards = [card1, card2, ...]) because the app needs an ordered, sequential set of cards that users can shuffle, loop through, add to, or remove from over time.
+
+
+
+
 
 
 
@@ -114,6 +122,10 @@ The situation at hand so far is incredibly unique and i am making steady progres
 
 
 
+
+
+
+
 Exercise 1.4: File Handling in Python
 Learning Goals
 
@@ -141,6 +153,13 @@ to prevent a total crash i would use try and except blocks
 
 im used to JavaScript and everything from the main part of the program so this is all new but the logic behind it all makes solid sense. Proud of all of the progress that i have made in total, and proud of how much work i have been able to do in the few days before this program is shut down.
 
+
+
+
+
+
+
+
 Exercise 1.5: Object-Oriented Programming in Python
 Learning Goals
 
@@ -166,3 +185,44 @@ Polymorphism means “many forms,” and in programming it means different class
 
 Method: Operator Overloading
 Operator overloading is when you define or customize how operators like +, -, ==, or < work for your own objects. In Python, this is done using special “dunder” methods like __add__ (for +) or __eq__ (for ==). It allows objects to behave more naturally when used with operators. For example, you could overload + for Recipe objects so that combining two recipes merges their ingredient lists (not something you’d always do, but it shows the idea). Operator overloading can make code cleaner and easier to read when used appropriately, because it lets operations feel intuitive for custom classes.
+
+
+
+
+
+
+Exercise 1.6: Connecting to Databases in Python
+
+Learning Goals
+- Create a MySQL database for your Recipe app
+
+Reflection Questions
+
+- What are databases and what are the advantages of using them?
+
+A database is an organized system for storing and managing data so it can be saved permanently, searched quickly, and updated safely. The advantages are that databases handle large amounts of data efficiently, let you query/filter/sort data with SQL, support multiple users/apps accessing the same data at the same time, and help keep data consistent through things like constraints and relationships. They’re also more reliable than storing everything in memory or in random files because they’re designed for long-term storage, backups, and structured organization.
+
+- List 3 data types that can be used in MySQL and describe them briefly:
+
+Data type    Definition
+VARCHAR(n)   Text/string data with a maximum length of n characters (good for names/titles).
+INT          Whole numbers (good for IDs, quantities, counts).
+FLOAT        Decimal numbers (good for prices, measurements, ratings).
+
+- In what situations would SQLite be a better choice than MySQL?
+
+SQLite is a better choice when you want something lightweight and simple that doesn’t require running a separate database server. It’s great for small projects, local development/testing, prototypes, single-user apps, and situations where you want a portable database file (like a .db file) that can be shipped with an application. It’s also useful when you don’t need heavy multi-user support, advanced permissions, or high-concurrency performance.
+
+- Think back to what you learned in the Immersion course. What do you think about the differences between JavaScript and Python as programming languages?
+
+JavaScript and Python are both high-level languages, but they feel different in practice. JavaScript is everywhere on the web (especially frontend) and uses braces/semicolons with lots of flexibility, while Python is designed for readability with indentation-based structure and generally cleaner syntax. JavaScript’s async patterns (promises/async-await) are core to many workflows, while Python can do async too but it’s less “front and center” for beginners. Python tends to be faster to write and easier to read for scripts and backend logic, and it has a huge ecosystem for automation and data tasks, while JavaScript shines when you need browser-native behavior or full-stack JS with Node.
+
+- Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. What would you say are the limitations of Python as a programming language?
+
+Python can be slower than compiled languages (like C/C++/Java) for CPU-heavy workloads, so performance can become a limitation at scale unless you offload work to optimized libraries or services. It also isn’t the best choice for certain environments like very strict real-time systems or high-performance game engines. Packaging and distributing Python apps can be a little messy compared to some ecosystems, especially across different operating systems. And while Python is great for many backend tasks, it isn’t the native language of the browser, so frontend work still typically requires JavaScript/TypeScript.
+
+
+
+
+
+
