@@ -1,0 +1,24 @@
+# --- Virtual Environments ---
+venv/
+.venv/
+achievement2-practice/
+env/
+
+# --- Python cache / bytecode ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Django ---
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# --- VS Code ---
+.vscode/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
